@@ -1,0 +1,280 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: #121212;
+  color: #f2f2f2;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.hero {
+  background-image: url('plantasgeneral.jpg');
+  background-size: 0%;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  padding: 0 50px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-text {
+  font-size: 4rem;
+  line-height: 1.1;
+  font-weight: bolder;
+  text-transform: uppercase;
+  margin-bottom: 2rem; 
+}
+
+.hero button {
+  background-color: #2ecc71;
+  color: white;
+  padding: 20px 40px;
+  border-radius: 8px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.hero button:hover {
+  background-color: #27ae60;
+}
+
+nav {
+  position: absolute; /* Position the nav absolutely */
+  bottom: 20px; /* Adjust this value as needed */ 
+  left: 50%;
+  transform: translateX(-50%); /* Center the nav horizontally */
+  background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background */
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+nav a {
+  margin-bottom: 100em;
+  font-size: large ;
+  font-weight: bolder;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px; 
+  transition: color 0.3s ease, background-color 0.3s ease; 
+}
+nav a:hover {
+  color: #2ecc71;
+  background-color: rgba(255, 255, 255, 0.1); 
+}
+
+/* Sección Acerca de */
+.acerca-de- {
+  background-color: #222831;
+  background-image: src="plantasgeneral.jpg";
+  border-radius: 10px;
+  padding: 40px;
+  margin: 80px auto;
+  max-width: 900px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.titulo {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.texto {
+  padding: 20px;
+  text-align: justify;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* Sección Cursos */
+.cursos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 40px auto;
+  max-width: 1200px; 
+}
+
+.curso-titulo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center; 
+}
+
+.curso-info {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Sección Cursos (Estilos generales) */
+.cursos { 
+  background-color: #222831;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  text-align: center;
+  margin: 20px; 
+  transition: transform 0.3s ease-in-out;
+}
+
+.cursos:hover {
+  transform: translateY(-10px);
+}
+
+.cursos h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.cursos button {
+  background-color: #222831;
+  color: white;
+  padding: 12px 20px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 5px;
+  border-radius: 10px;
+  border: 2px solid #2ecc71;
+  transition: background-color 0.3s, transform 0.3s ease;
+}
+
+.cursos button:hover {
+  background-color: #2ecc71;
+  transform: scale(1.05);
+}
+
+.cursos button a {
+  color: white;
+  text-decoration: none;
+}
+
+.cursos button a:hover {
+  color: #121212;
+}
+
+/* Sección Carrito */
+#carrito {
+  background-color: #222831;
+  padding: 30px;
+  border-radius: 12px;
+  margin-top: 40px;
+}
+
+#carrito h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#lista-carrito {
+  list-style-type: none;
+  padding: 0;
+}
+
+#total {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-top: 20px;
+  color: #2ecc71;
+}
+
+/* Estilo para los productos en el carrito */
+#lista-carrito li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #333;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+#lista-carrito li span {
+  font-weight: bold;
+}
+
+#lista-carrito li button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+#lista-carrito li button:hover {
+  background-color: #c0392b;
+}
+
+/* Sección de Contacto */
+#contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+input[type="email"] {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  padding: 12px;
+  width: 250px;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+button[type="button"] {
+  background-color: #2ecc71;
+  color: white;
+  padding: 12px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+button[type="button"]:hover {
+  background-color: #27ae60;
+}
+
+/* Footer */
+footer {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  /* Estilos para pantallas más pequeñas (e.g., tablets) */
+  .hero {
+    min-height: 50vh;
+  }
+  .hero-text {
+    font-size: 3rem;
+  }
+}
